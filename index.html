@@ -54,11 +54,34 @@
       0%, 100% { box-shadow: 0 0 15px lime; }
       50% { box-shadow: 0 0 5px darkgreen; }
     }
+    #goBackBtn {
+      position: fixed;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 9999;
+      background: rgba(34,139,34,0.9);
+      color: white;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-family: sans-serif;
+      text-decoration: none;
+      font-size: 16px;
+      box-shadow: 0 0 8px #00ffcc;
+      transition: transform 0.3s ease;
+    }
+    #goBackBtn:hover {
+      transform: translateY(-50%) scale(1.05);
+    }
   </style>
 </head>
 <body>
   <iframe src="https://storage.googleapis.com/test-41376.appspot.com/minep.html" allowfullscreen></iframe>
 
+  <!-- Go Back Button -->
+  <a id="goBackBtn" href="https://sites.google.com/view/staticquasar931/gm3z/minecraft/minecraft-parkour" target="_blank">← Go Back</a>
+
+  <!-- Static Menu -->
   <div id="staticMenu">
     <button id="staticMenuClose" onclick="closeStaticMenu()">✕</button>
     <div><a href="https://sites.google.com/view/staticquasar931/gm3z" target="_blank">🎮 More Unblocked Games by Static</a></div>
